@@ -28,7 +28,7 @@
 
 2. `go test`
 
-### Useful Resources
+## Useful Resources
 
 [ETHDKG implementation](https://github.com/PhilippSchindler/ethdkg/)
 
