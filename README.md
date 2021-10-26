@@ -2,15 +2,15 @@
 
 [Intro video](https://www.youtube.com/watch?v=LCCsw-aTdl0&list=PLXckXtNUcFBVc-ut9E74pGiDW-yEfnXX-&index=3)
 
-# Description
+## Description
 
 `protocol` contains protocols for user participation, on-chain communication, Incentivization implemented in Solidity smart contracts
 
 `encryption` contains the Golang code for Identity-based encryption and threshold decryption. This is built upon the IBE implementation of `vuvuzela/crypto`.
 
-# Run tests
+## Instruction for runing tests
 
-## Protocol
+### Protocol
 
 1. `cd protocol`
 
@@ -22,7 +22,7 @@
 
 5. `truffle test --show-events` or `truffle test`
 
-## Encryption
+### Encryption
 
 1. `cd encryption/IBEcrypto`
 
