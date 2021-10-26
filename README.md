@@ -8,7 +8,7 @@
 
 `encryption` contains the Golang code for Identity-based encryption and threshold decryption. This is built upon the IBE implementation of `vuvuzela/crypto`.
 
-## Instruction for runing tests
+## Instruction for running tests
 
 ### Protocol
 
