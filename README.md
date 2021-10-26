@@ -1,4 +1,4 @@
-# Front_Running
+# Frunliner: Preventing De-Fi Front-running Attacks using Identity-Based Encryption and DKG
 
 [ETHDKG implementation](https://github.com/PhilippSchindler/ethdkg/)
 
@@ -8,15 +8,15 @@
 
 # Description
 
-`FR` contains solidity smart contracts.
+`protocol` contains protocols for user participation, on-chain communication, Incentivization implemented in Solidity smart contracts
 
-`CryptPart` contains the Golang code for IBE threshold encryption and decryption. This is built upon the IBE implementation of `vuvuzela/crypto`.
+`encryption` contains the Golang code for Identity-based encryption and threshold decryption. This is built upon the IBE implementation of `vuvuzela/crypto`.
 
 # Run tests
 
-## FR
+## Protocol
 
-1. `cd FR`
+1. `cd protocol`
 
 2. `truffle compile`
 
@@ -26,8 +26,8 @@
 
 5. `truffle test --show-events` or `truffle test`
 
-## CryptPart
+## Encryption
 
-1. `cd CryptPart/IBEcrypto`
+1. `cd encryption/IBEcrypto`
 
 2. `go test`
