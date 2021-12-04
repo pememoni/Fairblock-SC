@@ -1,5 +1,5 @@
-# Frunliner: Preventing De-Fi Front-running Attacks using Identity-Based Encryption and DKG
-Fruntliner is the frontliner worker to fight frontrunning attacks!
+# FairBlock: Preventing De-Fi Front-running Attacks using Identity-Based Encryption and DKG
+
 Front-running  attacks  have  been  a  major  concern  in blockchain-based  applications. MEV is  defined  as  the  revenue  that  miners  also  known  as validators extract by front-running attacks which can be reordering,  censoring,  and adding transactions. Researchers has been reporting shocking statistics about MEV revenues. Everyday,  sophisticated bots and their affiliated miners are  making  between  $1  million  to  $5  million  with  the total amount of over $707.4 million to the date. These  type  of  attacks lead to  failure  of  transactions,  increase  and  waste  of fees,  and  occupation  of  network  capacity.   This project is an efficient  and  realistic  protocol for preventing Front-running Attacks based  on  identity-based encryption and distributed key generation.
 
 [Intro video](https://www.youtube.com/watch?v=LCCsw-aTdl0&list=PLXckXtNUcFBVc-ut9E74pGiDW-yEfnXX-&index=3)
