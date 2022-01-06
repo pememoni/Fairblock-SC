@@ -29,10 +29,3 @@ Front-running  attacks  have  been  a  major  concern  in blockchain-based  appl
 1. `cd encryption/IBEcrypto`
 
 2. `go test`
-
-## Useful Resources
-
-[ETHDKG implementation](https://github.com/PhilippSchindler/ethdkg/)
-
-[Ferveo for VSS on the public chain](https://anoma.network/blog/ferveo-a-distributed-key-generation-scheme-for-front-running-protection/)
-
