@@ -4,6 +4,8 @@ While blockchain systems are quickly gaining popularity, front-running remains a
 In our approach, to decrypt a block of N transaction, the number of messages sent across the network only grows linearly with the size of decrypting committees, S. That is, to decrypt a set of N transactions sequenced at a specific block, a committee only needs to exchange $S$ decryption shares (independent of N). In comparison, previous solutions based on the threshold encryption schemes, where each transaction in a block must be decrypted separately by the committee, resulting in bandwidth overhead of N * S.
 
 ## How does FairBlock work?
+![flow](https://user-images.githubusercontent.com/34263018/148458698-80357c64-575e-44d9-892d-28ab77a2856a.png)
+
 In FairBlock, a committee named "keepers" run a DKG protocol to generate a shared master key associated with a system-wide master public key for an IBE scheme.
 Next, we associate each block or range of blocks with an IBE "identity". Consequently, clients can commit to their transactions by encrypting their information with master public key and an identity for a future block h (or a range of blocks). Validators run the consensus and sequence all encrypted transactions in a block. Finally, to decrypt the block with minimal overheads, each keeper (a) computes a share of the private key for the IBE identity corresponding to block identifer h, and (b) broadcasts it over the blockchain. 
 After sufficiently many keepers propagated their shares, anyone can perform the key reconstruction process to obtain the private key
