@@ -3,7 +3,7 @@ pragma solidity >=0.4.22 <0.9.0;
 
 contract Participate {
 
-  // To keep a record of if an address is a valid keyper
+  // To keep a record of if an address is a valid keeper
   mapping (address => bool) public Relayers;
   uint EntryFee;
 
