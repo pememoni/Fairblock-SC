@@ -46,7 +46,7 @@ contract('Process Async', function(accounts) {
 
         // then make a commitment
         await CommitContract.makeCommitment(EncryptedTx, Commitment, blocknumber, {from: accounts[4], value: 1e18});
-        // Decrypters in the system should be able to decrypt them
+        // Relayers in the system should be able to decrypt them
         let DecryptedTx = tx
         // execution
         await ProcessContract.executeTX(
