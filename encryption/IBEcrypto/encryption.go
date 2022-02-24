@@ -4,7 +4,7 @@ import (
 	"encoding/hex"
 	"errors"
 	"fmt"
-	"github.com/zbh888/crypto/ibe"
+	"github.com/pememoni/crypto/ibe"
 	"vuvuzela.io/crypto/rand"
 )
 
