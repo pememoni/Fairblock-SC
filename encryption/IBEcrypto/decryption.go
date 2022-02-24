@@ -3,7 +3,7 @@ package IBEcrypto
 import (
 	"encoding/hex"
 	"fmt"
-	"github.com/zbh888/crypto/ibe"
+	"github.com/pememoni/crypto/ibe"
 )
 
 func decrypt(C ibe.Ciphertext, sk *ibe.IdentityPrivateKey) (string, error) {
