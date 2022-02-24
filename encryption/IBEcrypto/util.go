@@ -4,7 +4,7 @@ import (
 	"math/big"
 	"reflect"
 )
-import "github.com/zbh888/crypto/ibe"
+import "github.com/pememoni/crypto/ibe"
 import "vuvuzela.io/crypto/bn256"
 
 type Commitment struct {
