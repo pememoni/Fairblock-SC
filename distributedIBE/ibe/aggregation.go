@@ -1,7 +1,7 @@
-package IBEcrypto
+package ibe
 
 import (
-	"github.com/pememoni/crypto/ibe"
+	"github.com/zbh888/crypto/ibe"
 	"math/big"
 	"vuvuzela.io/crypto/bn256"
 )
@@ -11,7 +11,6 @@ import (
 // https://github.com/vuvuzela/crypto/blob/master/bn256/bn256.go
 
 // https://github.com/vuvuzela/crypto/blob/master/ibe/ibe.go
-
 
 // publish Public key,
 func AggregationPK(Commitments []Commitment, S []uint32) *ibe.MasterPublicKey {
@@ -47,10 +46,12 @@ func AggregationSK(ReceivedShares []SentShare, Commitments []Commitment, ID stri
 			Invalid = append(Invalid, commitment.Index)
 		}
 	}
+
 	for _, r := range ValidShare {
 		processedShare := processSK(r, Valid)
 		SkShares = append(SkShares, processedShare.Share)
 	}
+
 	SK := new(ibe.IdentityPrivateKey).Aggregate(SkShares...)
 	return SK, Invalid
 }
