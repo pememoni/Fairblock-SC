@@ -36,6 +36,10 @@ that allows decryption of all transactions encrypted under identity "h" with no 
 
 ### Encryption
 
-1. `cd encryption/IBEcrypto`
+1. `cd distributedIBE/ibe`
 
 2. `go test`
+
+* This project has been built based on Vuvuzela and tcpaillier projects
+* This implementation has not been vetted for a production setting, use with caution
+* This project has been tested on Linux
