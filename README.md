@@ -1,11 +1,11 @@
-# FairBlock: Preventing De-Fi Front-running Attacks using Identity-Based Encryption
+# Fairblock: Preventing De-Fi Front-running Attacks using Identity-Based Encryption
 
 This repo has been developed during my academic publications in grad school, for recent developments of Fairblock (as a start-up) please check [here](https://github.com/fairblock)
 
 While blockchain systems are quickly gaining popularity, front-running remains a major obstacle to fair exchange. In this paper, we show how to apply Identity-Based Encryption (IBE) to prevent front-running with minimal bandwidth overheads. 
 In our approach, to decrypt a block of N transaction, the number of messages sent across the network only grows linearly with the size of decrypting committees, S. That is, to decrypt a set of N transactions sequenced at a specific block, a committee only needs to exchange $S$ decryption shares (independent of N). In comparison, previous solutions based on the threshold encryption schemes, where each transaction in a block must be decrypted separately by the committee, resulting in bandwidth overhead of N * S.
 
-## How does FairBlock work?
+## How does Fairblock work?
 ![flow](https://user-images.githubusercontent.com/34263018/148458698-80357c64-575e-44d9-892d-28ab77a2856a.png)
 
 In FairBlock, a committee named "keepers" run a DKG protocol to generate a shared master key associated with a system-wide master public key for an IBE scheme.
